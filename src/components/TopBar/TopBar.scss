@@ -1,0 +1,43 @@
+.dapp-topbar {
+  width: 100%;
+  align-items: center;
+  a,
+  button {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    margin: 6px;
+    min-width: fit-content !important;
+    &#hamburger {
+      padding: 11px !important;
+    }
+    &.toggle-button {
+      height: 39px;
+      padding: 9.5px !important;
+    }
+    text-decoration: none;
+  }
+}
+.tablet .dapp-topbar {
+  justify-content: space-between;
+}
+.pending-txn-container {
+  display: flex;
+  align-items: center;
+  padding: 10px !important;
+  .MuiButton-label {
+    margin-right: 0;
+    transition: all 0.33s ease-out;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+.caret-down {
+  position: absolute;
+  right: 0.4rem;
+}
+.hovered-button {
+  .MuiButton-label {
+    margin-right: 0.5rem;
+    transition: all 0.33s ease-out;
+  }
+}
